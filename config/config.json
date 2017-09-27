@@ -1,0 +1,8 @@
+{
+  "database": {
+    "addr": "127.0.0.1:5432",
+    "username": "postgres",
+    "password": "",
+    "database_name": "api_development"
+  }
+}
