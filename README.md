@@ -2,6 +2,13 @@
 
 Api written in Golang.
 
+
+## Usage
+
+Start the server:
+
+```gin run server.go```
+
 ## Migrations
 
 We use [go-pg/migrations](https://github.com/go-pg/migrations) to control our database migrations, such as creating, changing and dropping tables & fields.

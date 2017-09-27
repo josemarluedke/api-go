@@ -1,0 +1,18 @@
+hash: a85530d3b214191375cb76c904c15e072de5618dcd687ade11c1dad53d2a9865
+updated: 2017-09-27T14:01:26.075385239-07:00
+imports:
+- name: github.com/codegangsta/gin
+  version: 9ba699191d209550053612796f2181e6ae352585
+- name: github.com/go-pg/migrations
+  version: 7fef4335f5b989ddf9f8b3d5661437faa976300b
+- name: github.com/go-pg/pg
+  version: 0cd2ff625d4d38126c5b6afb9399a3a436883bd1
+  subpackages:
+  - internal
+  - internal/parser
+  - internal/pool
+  - orm
+  - types
+- name: github.com/jinzhu/inflection
+  version: 1c35d901db3da928c72a72d8458480cc9ade058f
+testImports: []
