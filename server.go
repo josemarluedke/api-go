@@ -5,6 +5,8 @@ import (
 	"html"
 	"log"
 	"net/http"
+
+	"github.com/josemarluedke/api/config"
 )
 
 func main() {
@@ -12,6 +14,6 @@ func main() {
 		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
 	})
 
-	fmt.Println("Server listening on port 8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	fmt.Printf("Server listening on port %s", config.Config.Port)
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%v", config.Config.Port), nil))
 }

@@ -13,6 +13,7 @@ func init() {
 }
 
 type config struct {
+	Port     string `json:"port"`
 	Database struct {
 		Addr         string `json:"addr"`
 		Username     string `json:"username"`
@@ -34,6 +35,11 @@ func loadConfig() *config {
 	err = json.NewDecoder(configFile).Decode(&appConfig)
 	if err != nil {
 		panic(err)
+	}
+
+	envPort := os.Getenv("PORT")
+	if len(envPort) > 0 {
+		appConfig.Port = envPort
 	}
 
 	return appConfig
