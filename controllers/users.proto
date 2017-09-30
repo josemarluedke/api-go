@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package proto;
+
+message User {
+    int64 id = 1;
+    string name = 2;
+    string hashedPassword = 3;
+}
+
+message CreateRequest {
+    string name = 1;
+    string password = 2;
+}
+
+message CreateResponse {
+    int64 id = 1;
+}
+
+message GetRequest {
+}
+
+service UserService {
+    rpc Create(CreateRequest) returns (CreateResponse) {
+    }
+
+    rpc Get(GetRequest) returns (User) {
+    }
+};

@@ -1,5 +1,5 @@
-hash: a85530d3b214191375cb76c904c15e072de5618dcd687ade11c1dad53d2a9865
-updated: 2017-09-27T14:01:26.075385239-07:00
+hash: d4169ba0f9420d015b8a25273e6d7c1deb159c820aee7dbb11b09d08807acf14
+updated: 2017-09-27T16:59:04.269398033-07:00
 imports:
 - name: github.com/codegangsta/gin
   version: 9ba699191d209550053612796f2181e6ae352585
@@ -13,6 +13,11 @@ imports:
   - internal/pool
   - orm
   - types
-- name: github.com/jinzhu/inflection
+- name: github.com/golang/protobuf
+  version: 130e6b02ab059e7b717a096f397c5b60111cae74
+  subpackages:
+  - protoc-gen-go
   version: 1c35d901db3da928c72a72d8458480cc9ade058f
+- name: google.golang.org/grpc
+  version: f92cdcd7dcdc69e81b2d7b338479a19a8723cfa3
 testImports: []
